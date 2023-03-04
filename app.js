@@ -2,7 +2,6 @@ const express = require('express');
 const sitemap = require('sitemap');
 const helmet = require('helmet');
 const prerender = require('prerender-node');
-const ua = require('universal-analytics');
 
 const app = express();
 
@@ -30,13 +29,6 @@ app.use(helmet());
 
 // Set up Prerender.js
 app.use(prerender());
-
-// Set up Google Analytics.js
-const visitor = ua('UA-XXXXX-X');
-app.use(function(req, res, next) {
-  res.analytics = visitor;
-  next();
-});
 
 // Set up routes
 app.get('/', (req, res) => {
