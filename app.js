@@ -14,8 +14,9 @@ app.use(function(req, res, next) {
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
+
 
 
 app.listen(process.env.PORT || 3000, function() {
