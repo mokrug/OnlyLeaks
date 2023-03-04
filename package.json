@@ -3,6 +3,7 @@
     "express": "^4.18.2",
     "helmet": "^6.0.1",
     "prerender-node": "^3.5.0",
+    "react-helmet": "^6.1.0",
     "sitemap": "^7.1.1",
     "universal-analytics": "^0.5.3"
   }
