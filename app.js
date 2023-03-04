@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const ua = require('universal-analytics');
-const helmet = require('helmet');
 const { Helmet } = require('react-helmet');
 
 // Set up Google Analytics.js
@@ -10,9 +9,6 @@ app.use(function(req, res, next) {
   res.analytics = visitor;
   next();
 });
-
-// Set up Helmet.js
-app.use(helmet());
 
 app.use(express.static('public'));
 
