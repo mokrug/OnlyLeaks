@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Style for the header */
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f39c12;
+  line-height: 1.2;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+/* Style for the paragraphs */
+p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.5;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Style for the Telegram link */
+a.telegram {
+  color: #0088cc;
+  background-color: #fff;
+  border: 2px solid #0088cc;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Style for the Discord link */
+a.discord {
+  color: #fff;
+  background-color: #7289da;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 200px;
+}
+
+/* Style for the header */
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #0088cc, #e91e63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+/* Style for the paragraphs */
+p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Style for the links */
+a {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+a.telegram {
+  color: #0088cc;
+  background-color: #fff;
+  border: 2px solid #0088cc;
+}
+
+a.telegram:hover {
+  background-color: #0088cc;
+  color: #fff;
+}
+
+a.discord {
+  color: #fff;
+  background-color: #7289da;
+}
+
+a.discord:hover {
+  background-color: #677bc4;
+}
